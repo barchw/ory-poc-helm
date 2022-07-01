@@ -1,0 +1,18 @@
+httpbin:
+  namespace: httpbin
+
+helloworld:
+  namespace: hello-world
+
+host: istio-POC
+
+global:
+  ingress:
+    domainName: bc-ory.goatz.shoot.canary.k8s-hana.ondemand.com
+  istio:
+    gateway:
+      namespace: kyma-system
+      name: kyma-gateway
+  oathkeeper:
+    host: ory-oathkeeper-proxy.kyma-system.svc.cluster.local
+    port: 4455
