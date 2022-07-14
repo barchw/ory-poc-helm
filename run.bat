@@ -1,8 +1,8 @@
 #!/bin/bash
-export NAMESPACE_1=httpbin
-export NAMESPACE_2=hello-world
 
-kubectl create ns $NAMESPACE_1
-kubectl create ns $NAMESPACE_2
+kubectl create ns httpbin
+kubectl create ns hello-world
+kubectl create ns ory-rules
 
+cd ory-poc
 helm install poc .
