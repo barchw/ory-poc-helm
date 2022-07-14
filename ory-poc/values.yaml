@@ -4,11 +4,11 @@ httpbin:
 helloworld:
   namespace: hello-world
 
-host: istio-POC
+host: test-host
 
 global:
   ingress:
-    domainName: bc-ory.goatz.shoot.canary.k8s-hana.ondemand.com
+    domainName: cluster.project.shoot.canary.k8s-hana.ondemand.com
   istio:
     gateway:
       namespace: kyma-system
