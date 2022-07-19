@@ -12,7 +12,7 @@ spec:
       - GET
       - PUT
       - POST
-    url: <http|https>://{{ .Values.host }}.{{ .Values.global.ingress.domainName }}<(:(80|443))?></httpbin/headers>
+    url: <http|https>://{{ .Values.host }}.{{ .Values.global.ingress.domainName }}<(:(80|443))?></httpbin/.*>
   upstream:
     url: http://httpbin.{{ .Values.httpbin.namespace }}.svc.cluster.local:80
     #Strip path removes "/httpbin" from the path

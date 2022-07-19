@@ -19,7 +19,7 @@ spec:
       - regex: ".*"
     match:
     - uri:
-        regex: /httpbin/headers
+        regex: /httpbin/.*
     route:
     - destination:
         host: {{ .Values.global.oathkeeper.host }}
@@ -35,7 +35,7 @@ spec:
       - regex: ".*"
     match:
     - uri:
-        regex: /helloworld/hello
+        regex: /helloworld/.*
     route:
     - destination:
         host: {{ .Values.global.oathkeeper.host }}

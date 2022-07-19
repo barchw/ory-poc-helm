@@ -4,11 +4,11 @@ httpbin:
 helloworld:
   namespace: hello-world
 
-host: test-host
+host: kyma-host
 
 global:
   ingress:
-    domainName: cluster.project.shoot.canary.k8s-hana.ondemand.com
+    domainName: bc-ir.goatz.shoot.canary.k8s-hana.ondemand.com
   istio:
     gateway:
       namespace: kyma-system
